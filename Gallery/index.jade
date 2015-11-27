@@ -1,0 +1,17 @@
+doctype html
+- var currentUrl = 'Photo Gallery'
+include ../inc/index.jade
+
+section.content
+
+  article.gallery-body
+
+    h1 Photo Gallery
+    .gallery-wrapper
+      - var n = 16
+      while n > 0
+        .img-container
+          != '<a class="gallery-link swipebox" rel="gallery-1" href="http://lorempixel.com/1000/1200/cats/'+n%10+'/"><img src="http://lorempixel.com/200/200/cats/'+n%10+'/" width="200" height="200" class="thumbnail" /></a>'
+        - n--
+
+script(type="text/javascript" src="../js/functions.js")

@@ -1,0 +1,22 @@
+html(lang="en")
+  head
+    meta(charset="utf-8")
+    title= 'Papllion - ' + currentUrl
+    link(rel="stylesheet", href="/css/style.css")
+
+  body(class={gallery:currentUrl === 'Photo Gallery' })
+
+    header.header
+      img(src="http://lorempixel.com/1800/500/cats/").header-image
+      nav.navigation
+        ul.horizontal-menu
+          li.menu-item
+            a.link(class={active: currentUrl === 'Home'} href="/") Home
+          li.menu-item
+            a.link(class={active:currentUrl === 'History' } href="/History") History
+          li.menu-item
+            a.link(class={active:currentUrl === 'Care' } href="/Care") Care
+          li.menu-item
+            a.link(class={active:currentUrl === 'Training' } href="/Training") Training
+          li.menu-item
+            a.link(class={active:currentUrl === 'Photo Gallery' } href="/Gallery") Photo Gallery

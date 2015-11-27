@@ -1,0 +1,114 @@
+// Base Styles
+
+body
+  font-family: "Open Sans", sans-serif
+
+h1  
+  color: #ccc
+  font-weight: 300
+
+figure
+  margin: auto
+
+a
+  &:active
+    color: orange
+  &:hover
+    color: red
+header
+  background-image: url('http://lorempixel.com/1800/500/cats/')
+  height: 400px
+
+.content
+  position: relative
+  background: white
+  margin-bottom: 230px
+  overflow: hidden
+  z-index: 2
+
+  article
+    padding: 100px 0
+    width: 100%
+    max-width: 1090px
+    margin: 0 auto
+    text-align: left
+    z-index: 3
+
+    .side-image
+      display: block
+    &.gallery-body
+      max-width: 90%
+      margin: 0 auto
+      .gallery-wrapper
+        width: auto
+        margin: 0 auto
+        text-align: center
+        div.img-container
+          width: 200px
+          height: 200px
+          overflow: hidden
+          display: inline-block
+          img
+            height: auto
+
+.left
+  float: left
+.right
+  float: right
+
+
+
+
+// Parallax
+.header
+  height: 400px
+  overflow: hidden
+  position: relative
+  .gallery &
+    height: 75px
+
+  .header-image
+    position: relative
+    width: 100%
+    float: left
+
+  .navigation
+    position: absolute
+    bottom: 0
+    width: 90%
+    margin: 0 5%
+
+  ul.horizontal-menu
+    position: relative
+    li.menu-item
+      float: left
+      list-style: none
+      width: 20%
+
+      a.link
+        text-decoration: none
+        width: 95%
+        display: block
+        text-align: center
+        padding: 0
+        margin: 0
+        background: rgba(255,255,255,0.7)
+        border: 3px outset
+        font:
+          size: 25px
+          weight: bold
+        &:hover
+          border: 3px inset
+          background: rgba(255,255,255,0.5)
+//          color: transparent
+//          text-shadow: 0 0 10px #000
+
+
+
+//  background:
+//    image: url('http://lorempixel.com/1800/1000/cats/')
+//    position: top center
+  
+// Model Grid
+
+
